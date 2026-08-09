@@ -1,0 +1,5 @@
+config SHIELD_TWINCAT_LEFT
+    def_bool $(shields_list_contains, TwinCat_left)
+
+    config SHIELD_TWINCAT_RIGHT
+    def_bool $(shields_list_contains, TwinCat_right)

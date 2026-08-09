@@ -1,0 +1,16 @@
+if SHIELD_TWINCAT_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "TwinCat"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+default y
+
+endif
+
+if SHIELD_TWINCAT_LEFT || SHIELD_TWINCAT_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
