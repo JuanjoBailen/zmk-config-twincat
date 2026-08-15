@@ -20,6 +20,10 @@
                 &kp F9      &kp LSHIFT  &kp NUBS  &kp Z     &kp X  &kp C     &kp V      &kp B   &kp B     &kp N      &kp M   &kp COMMA  &kp DOT   &kp SLASH &kp RSHIFT  &kp UP     &kp END
                 &kp F3      &kp LCTRL   &kp LGUI  &kp LALT  &mo 1            &kp SPACE                    &kp SPACE          &mo 1      &kp RGUI  &kp RCTRL &kp LEFT    &kp DOWN   &kp RIGHT 
             >;
+            sensor-bindings = <
+                &inc_dec_kp C_VOL_UP C_VOL_DN
+                &inc_dec_kp C_VOL_UP C_VOL_DN
+            >;
         };
 
         bt_layer {
