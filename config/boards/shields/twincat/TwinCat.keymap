@@ -3,8 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define MEDIA 1
-#define BLUETOOTH 2
+#define BLUETOOTH 1
 
 / {
     keymap {
@@ -29,11 +28,11 @@
         bt_layer {
             display-name = "Bluetooth";
             bindings = <
-                &none       &none        &none   &none           &none  &none  &none  &none   &none     &none       &none  &none      &none       &none               &none    &none
-                &bootloader &bt BT_CLR           &studio_unlock  &none  &none  &none  &none   &none     &none       &none  &none      &none       &none     &none              &none
-                &none       &none                &none           &none  &none  &none  &none   &none     &none       &none  &none      &none       &none     &none     &none    &none
-                &none       &none        &none   &none           &none  &none  &none  &none   &none     &none       &none  &none      &none       &none     &none     &none    &none
-                &none       &none        &none   &none           &none         &none                    &none              &none      &none       &none     &none     &none    &none
+                &none       &none        &kp F1  &kp F2  &kp F3  &kp F4 &kp F5 &kp F6 &kp F7  &kp F8    &kp F9      &kp F10  &kp F11    &kp F12                         &kp DELETE  &kp F14
+                &bootloader &bt BT_CLR           &studio_unlock  &none  &none  &none  &none   &none     &none       &none    &none      &none       &none     &none              &none
+                &none       &none                &none           &none  &none  &none  &none   &none     &none       &none    &none      &none       &none     &none     &none    &none
+                &none       &none        &none   &none           &none  &none  &none  &none   &none     &none       &none    &none      &none       &none     &none     &none    &none
+                &none       &none        &none   &none           &none         &none                    &none                &none      &none       &none     &none     &none    &none
             >;
         };
 
