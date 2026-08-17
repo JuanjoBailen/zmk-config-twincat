@@ -21,18 +21,17 @@
             >;
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN
-                &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
         };
 
         bt_layer {
             display-name = "Bluetooth";
             bindings = <
-                &none       &none        &kp F1  &kp F2  &kp F3  &kp F4 &kp F5 &kp F6 &kp F7  &kp F8    &kp F9      &kp F10  &kp F11    &kp F12                         &kp DELETE  &kp F14
-                &bootloader &bt BT_CLR           &studio_unlock  &none  &none  &none  &none   &none     &none       &none    &none      &none       &none     &none              &none
-                &none       &none                &none           &none  &none  &none  &none   &none     &none       &none    &none      &none       &none     &none     &none    &none
-                &none       &none        &none   &none           &none  &none  &none  &none   &none     &none       &none    &none      &none       &none     &none     &none    &none
-                &none       &none        &none   &none           &none         &none                    &none                &none      &none       &none     &none     &none    &none
+                &none           &none        &kp F1  &kp F2   &kp F3   &kp F4    &kp F5 &kp F6 &kp F7  &kp F8    &kp F9      &kp F10  &kp F11    &kp F12                         &kp DELETE  &kp F14
+                &bootloader     &bt BT_CLR           &none    &kp UP   &none     &none  &none   &none     &none       &none    &none      &none       &none     &none              &none
+                &studio_unlock  &none                &kp LEFT &kp DOWN &kp RIGHT &none  &none   &none     &none       &none    &none      &none       &none     &none     &none    &none
+                &bt BT_CLR      &none        &none   &none    &none    &none     &none  &none   &none     &none       &none    &none      &none       &none     &none     &none    &none
+                &none           &none        &none   &none    &none              &none                    &none                &none      &none       &none     &none     &none    &none
             >;
         };
 

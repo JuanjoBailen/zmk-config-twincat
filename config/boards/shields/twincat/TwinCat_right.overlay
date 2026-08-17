@@ -19,3 +19,7 @@
 &right_encoder {
     status = "okay";
 };
+
+&sensors {
+    sensors = <&right_encoder>;
+};
